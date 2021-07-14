@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(images/background.jpg);
+  background-size: 100%;
+  cursor: url("images/cursor.cur"), auto;
+  height: 100vh;
+}
+
+.target-button {
+  max-width: 75px;
+  max-height: 75px;
+  width: 5%;
+  height: 5%;
+  position: absolute;
+  border: none;
+  background: none;
+  border-radius: 100%;
+  cursor: url("images/cursor.cur"), auto;
+}
+
+#timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3em;
+}
+
+#modal-background,
+#game-over-modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#modal-background.active,
+#game-over-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#modal-button-background,
+#game-over {
+  background-color: seashell;
+  padding: 2.5em;
+  max-width: 250px;
+  width: 85%;
+}
+#modal-button {
+  background-color: gray;
+  padding: 2.5em;
+  width: auto;
+}
+
+#modal-button {
+  background-color: gray;
+  padding: 2.5em;
+  width: auto;
+}
